@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=soft&color=auto&customColorList=13&height=300&section=header&text=yesjean&fontSize=90&animation=twinkling)
+![header](https://capsule-render.vercel.app/api?type=soft&color=auto&customColorList=13&height=180&section=header&text=yesjean&fontSize=90&animation=twinkling)
 
 <!--
 **yesjean/yesjean** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
