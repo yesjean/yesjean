@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=soft&color=auto&customColorList=13&height=180&section=header&text=yesjean&fontSize=90&animation=twinkling)
+![header](https://capsule-render.vercel.app/api?type=soft&color=auto&customColorList=13&height=130&section=header&text=yesjean&fontSize=70&animation=twinkling)
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=yesjean&show_icons=true&theme=dracula)
 
