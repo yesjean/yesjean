@@ -1,22 +1,20 @@
-name: Deploy to Vercel
-
+name: Vercel Production Deployment
+env:
+  VERCEL_TOKEN: ${{ secrets.TEST_TOKEN }}
 on:
   push:
     branches:
-      - master
-
+      - main
 jobs:
-  deploy:
+  Deploy-Production:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Install Vercel CLI
-      run: npm install -g vercel
-
-    - name: Deploy to Vercel
-      run: vercel --prod
-      env:
-        VERCEL_TOKEN: ${{ secrets.TEST_TOKEN }}
+      - uses: actions/checkout@v2
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=production --token=${{ secrets.TEST_TOKEN }}
+      - name: Build Project Artifacts
+        run: vercel build --prod --token=${{ secrets.TEST_TOKEN }}
+      - name: Deploy Project Artifacts to Vercel
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.TEST_TOKEN }}
