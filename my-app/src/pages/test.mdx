@@ -1,0 +1,122 @@
+
+# Java Programming Overview
+
+Java는 객체 지향 프로그래밍 언어로, 강력한 메모리 관리와 플랫폼 독립성을 제공합니다. 이 문서에서는 Java의 기본 개념과 함께 객체 지향 프로그래밍의 주요 요소를 다룹니다.
+
+## 1. Java의 기본 개념
+
+Java는 다음과 같은 주요 특징을 가지고 있습니다:
+
+- **플랫폼 독립성**: Java 코드는 한 번 작성되면 어디서나 실행할 수 있습니다. JVM(자바 가상 머신)을 통해 플랫폼에 종속되지 않는 코드를 실행합니다.
+- **객체 지향**: 모든 것은 객체입니다. 객체는 데이터와 기능을 함께 캡슐화합니다.
+- **자동 메모리 관리**: Java는 가비지 컬렉션을 통해 메모리를 자동으로 관리합니다.
+
+## 2. 객체 지향 프로그래밍(OOP)
+
+Java는 객체 지향 언어이므로 OOP의 네 가지 주요 원칙을 지원합니다:
+
+1. **캡슐화**: 데이터와 메서드를 하나의 단위로 묶어 외부로부터 보호합니다.
+2. **상속**: 기존 클래스를 기반으로 새로운 클래스를 정의할 수 있습니다.
+3. **다형성**: 같은 인터페이스를 구현하여 서로 다른 객체를 동일하게 사용할 수 있습니다.
+4. **추상화**: 복잡성을 줄이고 필요한 정보만을 표현합니다.
+
+### 2.1. 클래스 및 객체
+
+Java에서 클래스는 객체를 생성하는 템플릿입니다. 다음은 클래스의 예입니다:
+
+```java
+public class Dog {
+    // 속성
+    String name;
+    int age;
+
+    // 생성자
+    public Dog(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // 메서드
+    public void bark() {
+        System.out.println(name + " says: Woof!");
+    }
+}
+```
+
+## 3. 제어문
+
+Java에서 사용할 수 있는 다양한 제어문이 있습니다:
+
+### 3.1. 조건문
+
+```java
+int number = 10;
+
+if (number > 0) {
+    System.out.println("Positive number");
+} else if (number < 0) {
+    System.out.println("Negative number");
+} else {
+    System.out.println("Zero");
+}
+```
+
+### 3.2. 반복문
+
+Java에서는 `for`, `while`, `do-while` 반복문을 사용할 수 있습니다:
+
+```java
+for (int i = 0; i < 5; i++) {
+    System.out.println("Iteration: " + i);
+}
+```
+
+## 4. 컬렉션
+
+Java의 컬렉션 프레임워크는 데이터 구조를 관리하는 데 유용한 도구입니다. 자주 사용되는 컬렉션 유형은 다음과 같습니다:
+
+- **ArrayList**: 동적 배열로 요소의 추가 및 제거가 쉽습니다.
+- **HashMap**: 키-값 쌍으로 데이터를 저장합니다.
+- **HashSet**: 중복을 허용하지 않는 데이터 집합을 저장합니다.
+
+### 4.1. 예제: ArrayList
+
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Charlie");
+
+        for (String name : names) {
+            System.out.println(name);
+        }
+    }
+}
+```
+
+## 5. 예외 처리
+
+Java에서는 예외 처리를 통해 오류를 관리합니다. `try-catch` 블록을 사용하여 예외를 처리할 수 있습니다.
+
+```java
+try {
+    int result = 10 / 0;
+} catch (ArithmeticException e) {
+    System.out.println("Cannot divide by zero.");
+}
+```
+
+## 결론
+
+Java는 객체 지향 프로그래밍 언어로, 다양한 기능과 강력한 도구를 제공합니다. 이 문서에서는 Java의 기본 개념, 객체 지향 프로그래밍 원칙, 제어문, 컬렉션 및 예외 처리에 대해 설명했습니다. 이러한 개념을 이해하면 Java 프로그래밍을 더 잘 활용할 수 있습니다.
+
+## 참고 자료
+
+- [Java 공식 문서](https://docs.oracle.com/en/java/)
+- [W3Schools Java Tutorial](https://www.w3schools.com/java/)
+- [GeeksforGeeks Java Programming](https://www.geeksforgeeks.org/java/)
+
